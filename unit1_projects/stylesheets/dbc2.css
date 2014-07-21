@@ -1,0 +1,97 @@
+Body {
+	color: #000000;
+	background-color: #d0d0d0;
+	font-family: Georgia, Times, Serif;
+}
+
+/*this is so there isn't a lot space between elements*/
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+#wrapper {
+	width: 750px;
+	margin: 20px auto 20px auto;
+}
+
+p {
+	font-size: 14px;
+	clear: both;
+}
+
+/*All header*/
+.header {
+	border: none;
+	width:100%;
+	height: 60px;
+	background-color: #ffffff;
+}
+
+h1 {
+	color: #e80000;
+	text-align: center;
+}
+
+.nav {
+	background-color: #b0b0b0;
+}
+
+.menu {
+	display: inline;
+	font-size: 12px;
+	padding: 12px;
+}
+/*end of header*/
+
+
+/**/
+.content {
+	border: none;
+	float: left;
+	background-color: #f0f0f0;
+	width: 556px;
+}
+
+.bbq_image {
+	float: left;
+	padding: 5px;
+	clear: both;
+}
+
+.sidebar {
+	border: none;
+	background-color: #f0f0f0;
+	float: right;
+	height: 400px;
+	width: 190px;
+}
+
+h3 {
+	border-bottom: 2px solid;
+}
+
+h5 {
+	padding: 3px;
+}
+
+.menu_two {
+	display: block;
+	font-size: 12px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.ending {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.footer {
+	border: none;
+	background-color: #b0b0b0;
+	text-align: center; 	
+	font-size: 10px;
+	clear: both;
+	margin-bottom: 20px;
+}
