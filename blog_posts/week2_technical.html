@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Troy's thoughts</title>
+  <link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog_stylesheet.css" />
+</head>
+
+<body>
+<div id="wrapper">
+
+<!-- MUST UPDATE HERE -->
+  <header>
+    <h1>TROY<mark class="color">leach</mark></h1>
+      <nav>
+        <ul>
+          <li><a href="http://troyleach.github.io/index.html">HOME</a></li>
+          <li><a href="mailto:troyleach29@gmail.com?subject=Blog%20Feedback">CONTACT</a></li>
+        </ul>
+      </nav>
+  </header>
+
+
+  <div id="content">
+
+<!-- BLOG -->
+    <h2>When should a id or class be used?</h2>
+    <h5 class="date">July 27, 2014</h5>
+    <hr class="top_line">
+    <p>
+       <h4>Id vs Class. What does that mean?</h4>
+       In doing the research for this, it seems that folks out there have a lot of different opinions, for an example, take a look at this thread from <a href="http://stackoverflow.com/questions/298607/css-best-practice-about-id-and-class">stackoverflow.</a>  Lets start off by giving some definitions of the two, these are taken from <a href="http://www.w3schools.com/css/css_selectors.asp">W3Schools:</a><br><br>
+       <h5><i>id selector</i></h5>
+        <i>The id selector uses the id attribute of an HTML tag to find the specific element.
+        An id should be unique within a page, so you should use the id selector when you want to find a single, unique element.
+        To find an element with a specific id, write a hash character, followed by the id of the element.
+        The style rule below will be applied to the HTML element with id="para1":</i><br>
+        <br>
+        <code>
+          #para1 {<br>
+            text-align: center;<br>
+            color: red;<br>
+          }<br>
+        </code>
+        <br>
+
+        <h5><i>class selector</i></h5>
+        <i>The class selector finds elements with the specific class.
+        The class selector uses the HTML class attribute.
+        To find elements with a specific class, write a period character, followed by the name of the class:
+        In the example below, all HTML elements with class="center" will be center-aligned:</i><br>
+        <br>
+        <code>
+          .center {<br>
+            text-align: center;<br>
+            color: red;<br>
+          }<br>
+        </code>
+        <br>
+        Ok, again, what does that mean. I am going express what I think it means. I personal would only use a id selector if the element I was trying to style was always going to be the same, never have the chance to change. Like a header for example, and possible the footer. I would use a class selector if I thought I would use it through out my HTML. For example, this is a very basic website.<br><br>
+        <img src="images/blogimg-3.png" alt="HTML code">
+        <img src="images/blogimg-2.png" alt="CSS code">
+        <br>
+        Above is the code for our basic web site.
+        <br><br>
+        <img src="images/blogimg-1.png" alt="typical web site" width="350" height="283">
+        <br>
+        This is what the site looks like with the above code.<br><br>
+        As you can see we have a id=header. The header will never change. I have a few classes, .title .content, .content_two, .footer. All these style the particular elements differently from each other. Lets say I want to use the title class for all my headers, all I have to do is add it to the element instead of re-writing all the div classes.<br><br>
+        <img src="images/blogimg-4.png" alt="HTML code">
+        <img src="images/blogimg-5.png" alt="CSS code">
+        <br>
+        Above, .title has been added to the h elements.
+        <br><br>
+        <img src="images/blogimg-6.png" alt="typical web site" width="350" height="283">
+        <br><br>
+        As you can see, now our headers of the two content areas are the same. I understand this is a very very simple description of the two. I purposefully named this class title to express a point. As a rule, never have the names of classes or ids for that matter, they should NOT be descriptive but rather describe the function. In this case a better name might be .color. That way, if we used this color and font-style as a standard for our site to mark things for example, we could create one class and continue to use it through out the HTML.<br><br>
+        In summary, the rule of thumb is you should ask yourself, is there more than one element which requires the same style now or at anytime in the future? and if the answer is even maybe, then make it a class. Ids are for uniquely identifying elements. In practical terms, id attributes should only be used one per document.
+    </p>
+    <hr class="bottom_line">
+  </div>
+<!-- END OF BLOG -->
+
+
+
+
+<!-- This is the sidebar -->
+  <aside>
+    <section> 
+      <h4>Welcome to Tbits</h4>
+    </section>
+<!-- this is general notes -->
+    <section class="notes">
+      <p>These are my thoughts!</p>
+    </section>
+<!-- recent posting -->
+    <section class="cat">
+      <h4>Recent Posts</h4>
+      <ul>
+        <h5>Technical:</h5>
+          <li><a href="http://troyleach.github.io/blog_posts/week2_technical.html">class vs id</a></a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_technical.html">Favorite website</a></a></li>
+          <h5>Cultural:</h5>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_cultural.html">Chefs in the Kitchen</a></a></li>
+          
+          
+        </ul>
+    </section>
+
+<!-- REFERENCES -->
+    <section class="cat">
+      <h4>References</h4>
+      <ul>
+          <li><a href="http://css-discuss.incutio.com/wiki/Classes_Vs_Ids">CSS-Discuss</a></a></li>
+          <li><a href="http://stackoverflow.com/questions/298607/css-best-practice-about-id-and-class">stackoverflow</a></a></li>
+        </ul>
+    </section>
+
+  </aside>
+
+  <footer>
+    &copy; 2014 TROYleach
+  </footer>
+
+ </div><!--close wrapper-->
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,184 @@
+    body {
+    	font-family: sans-serif;
+    	font-weight: bold;
+    	background-color: #CCD6E0;
+    }
+
+    h2, h3, h4 {
+    	color: #336699;
+    	font-family: sans-serif;
+    	font-weight: bolder;
+    }
+
+    h1 {
+    	color: white;
+    	font-family: impact;
+    }
+
+    .header {
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #142232;
+
+}
+
+.text {
+	margin-left: 5%;
+	margin-right: 5%;
+	border: 4px solid #336699;
+	border-radius: 10px;
+	background-color: #F5F7F9;
+}
+
+.responsive-design {
+    background-color: #F5F7F9;
+    }
+    
+.fluid-layouts {
+    background-color: #F5F7F9;
+    }
+    
+.your-conclusion {
+    background-color: #F5F7F9;
+    }
+    
+.reflection {
+	display: none;
+    background-color: #F5F7F9;
+    }
+    
+.references {
+    background-color: #F5F7F9;
+    }
+
+
+	
+}
+
+/*All media code goes under here*/
+@media screen and (max-width: 960px) {
+    .header {
+    text-align: center;
+    padding: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    }
+
+    .text {
+    	margin-bottm: 3%;
+    }
+   
+    
+    .responsive-design {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .fluid-layouts {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .your-conclusion {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .reflection {
+    	display: none;
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .references {
+        padding: 1%;
+        margin: 3%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .header {
+    text-align: center;
+    padding: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    }
+
+    .text {
+    	margin-bottm: 3%;
+    }
+    
+    .responsive-design {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .fluid-layouts {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .your-conclusion {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .reflection {
+    	display: none;
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .references {
+        padding: 1%;
+        margin: 3%;
+    }
+}
+
+
+/*this is for Iphones*/
+@media screen and (max-width: 480px) {
+
+.header {
+    text-align: center;
+    padding: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    }
+    
+    .text {
+    	margin-bottm: 3%;
+    }
+    
+    .responsive-design {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .fluid-layouts {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .your-conclusion {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .reflection {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .references {
+        padding: 1%;
+        margin: 3%;
+    }
+
+}
