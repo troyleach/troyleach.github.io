@@ -3,7 +3,8 @@ Body {
 	background-color: white;
 	background-position: center;
 	line-height: 1.2em;
-	font-family: georgia, times, serif;
+	font-family: 'Roboto Condensed', Arial, san-serif;
+	font-size: 100%;
 }
 
 * {
@@ -31,6 +32,7 @@ header {
 
 h1 {
 	padding-bottom: 5px;
+	font-family: georgia, times, serif;
 }
 
 .top_line {
@@ -56,14 +58,14 @@ nav {
 }
 
 nav ul {
-	padding: 0px 0px 0px 850px;
+	padding: 0px 0px 0px 800px;
 	margin: 0px;
 }
 
 nav li {
 	display: inline;
-	font-size: 12px;
-	padding: 12px;
+	font-size: 11px;
+	padding: 5px;
 }
 
 #content {
@@ -88,14 +90,19 @@ h2 {
 	padding-top: 10px
 }
 
+
+/*THIS IS WHERE MY SIDEBAR STARTS*/
 aside {
 	width: 200px;
-	height: 400px;
-	margin-top: 25px;
+	height: 100%;
+	margin-top: 8px;
 	padding: 0px 1px 1px 1px;
 	float: right;
-	border-bottom: 1px solid;
+}
 
+#today {
+	color: #3a9a3a;
+	font-size: 14px;
 }
 
 section h4 {
@@ -106,19 +113,35 @@ section h4 {
 
 .notes {
 	padding: 5px 0 5px 0;
-	font-size: 15px;
+	font-size: 12px;
 	font-style: oblique;
 	color: #3a9a3a;
 }
 
+.quote {
+	color: #000000;
+
+}
+
 .cat {
-	padding: 60px 0 20px 0;
+	padding: 0 0 10px 0;
 }
 
 section li {
 	display: relitive;
 	font-size: 12px;
 	margin-left: 30px;
+}
+
+.socialize {
+	padding: 0 0 0 0;
+}
+
+.socialize_icon {
+	width: 20px;
+	height: 20px;
+	padding: 3px;
+	margin-left: 18px
 }
 
 footer {

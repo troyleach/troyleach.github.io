@@ -2,7 +2,8 @@ Body {
 	color: #000000;
 	background-color: white;
 	line-height: 1.2em;
-	font-family: georgia, times, serif;
+	font-family: 'Roboto Condensed', Arial, san-serif;
+	font-size: 100%;
 }
 
 * {
@@ -31,6 +32,7 @@ a:hover {
 
 h1 {
 	padding-bottom: 5px;
+	font-family: georgia, times, serif;
 }
 
 mark.color {
@@ -106,7 +108,7 @@ section h4 {
 }
 
 .socialize {
-	padding: 50px 0 0 0;
+	padding: 30px 0 0 0;
 }
 
 .socialize_footer {

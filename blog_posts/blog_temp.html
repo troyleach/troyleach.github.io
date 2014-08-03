@@ -16,8 +16,8 @@
       <nav>
         <ul>
           <li><a href="http://troyleach.github.io/index.html">HOME</a></li>
-          <li><a href="http://troyleach.github.io/blog_posts/week1_technical.html">BLOG</a></li>
-          <!-- <li><a href="">CONTACT</a></li> -->
+          <li ID="img1" onMouseOver="doMouseOver()"><a href="http://troyleach.github.io/blog_posts/week1_technical.html">BLOG</a></li>
+          <li><a href="mailto:troyleach29@gmail.com?subject=Comments%20on%20my%20Blog">COMMENTS</a></li>
         </ul>
       </nav>
   </header>
@@ -40,8 +40,8 @@
 <!-- BLOG -->
       TEXT
       <br><br>
-    
 
+<A HREF="http://troyleach.github.io/index.html" onMouseover="document.arrow.src='../unit1_projects/images/usatoday.png'" onMouseout="document.arrow.src='../unit1_projects/images/nfl.png'"><IMG SRC="../unit1_projects/images/nfl.png" BORDER=0 NAME="arrow" />home</A>
 
 <!-- this is the end of this days blog -->
     </p>
@@ -51,22 +51,52 @@
 
 <!-- This is the sidebar -->
   <aside>
+    <section>
+      <p id="today"></p>
+    </section>
+
     <section> 
       <h4>Welcome to Tbits</h4>
     </section>
 <!-- this is general notes -->
     <section class="notes">
-      <p>These are my thoughts!</p>
+      <p>These are bits of Troy's thoughts!</p>
+      <p class="quote">
+        Strive not to be a success, but rather to be of value.<br>
+        -Albert Einstein
+      </p>
     </section>
 <!-- recent posting -->
     <section class="cat">
       <h4>Recent Posts</h4>
       <ul>
-          <li><a href="http://troyleach.github.io/blog_posts/week1_technical.html">Technical 7/19/14</a></a></li>
-          <li><a href="http://troyleach.github.io/blog_posts/week1_cultural.html">Cultural 7/20/14</a></a></li>
-          <li><a href="http://troyleach.github.io/unit1_projects/dbc1.html">First assignment 7/18/14</a></a></li>
-          <li><a href="http://troyleach.github.io/unit1_projects/dbc2.html">First assignment 7/18/14</a></a></li>
+          <h5>Technical:</h5>
+          <li><a href="http://troyleach.github.io/blog_posts/week2_technical.html">class vs id</a></a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_technical.html">Favorite website</a></a></li>
+          <h5>Cultural:</h5>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_cultural.html">Chefs in the Kitchen</a></a></li>
         </ul>
+    </section>
+
+    <!-- REFERENCES -->
+    <section class="cat">
+      <h4>References</h4>
+      <ul>
+          <li><a href="http://css-discuss.incutio.com/wiki/Classes_Vs_Ids">CSS-Discuss</a></a></li>
+          <li><a href="http://stackoverflow.com/questions/298607/css-best-practice-about-id-and-class">stackoverflow</a></a></li>
+        </ul>
+    </section>
+
+<!-- SOCIALIZE -->
+    <section class="socialize">
+      <h4>Lets Socialize</h4>
+        <a href="https://www.facebook.com/troy.leach.14"><img class="socialize_icon" src="../unit1_projects/images/facebook-icon-md.png" atl="facebook" /></a>
+
+        <a href="http://www.linkedin.com/pub/troy-leach/a/80b/672"><img class="socialize_icon" src="../unit1_projects/images/in.png" atl="linkedin" /></a>
+
+        <a href="https://twitter.com/troyleach29"><img class="socialize_icon" src="../unit1_projects/images/twitter-icon-md.png" atl="twitter" /></a>
+
+        <a href="https://plus.google.com/u/0/100235641551070410533/posts"><img class="socialize_icon" src="../unit1_projects/images/google-plus-icon.png" atl="google plus" /></a>
     </section>
 
   </aside>
@@ -77,5 +107,11 @@
 
  </div><!--close wrapper-->
 
+<!-- THIS IS WHERE MY SCRIPTS LIVE -->
+<script type="text/javascript">
+        var d = new Date();
+        document.getElementById("today").innerHTML = d.toDateString();
+
+      </script>
 </body>
 </html>
