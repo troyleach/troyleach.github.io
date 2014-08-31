@@ -4,7 +4,7 @@ Body {
 	background-position: center;
 	line-height: 1.2em;
 	font-family: 'Roboto Condensed', Arial, san-serif;
-	font-size: 100%;
+	font-size: .9em;
 }
 
 * {
@@ -26,6 +26,30 @@ a:hover {
 	color: #3a9a3a;
 }
 
+.links {
+	text-decoration: underline;
+
+}
+
+code {
+	background-color: #e6e6e6;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.indent {
+	margin-left: 5%;
+}
+
 header {
 	height: 100%;
 	border: none;
@@ -42,17 +66,17 @@ header span {
 	
 }
 
-.top_line {
+.line {
 	margin-top: 3px;
 	margin-right: 5px;
 	margin-bottom: 15px;
 }
 
-.bottom_line {
+/*.bottom_line {
 	margin-top: 30px;
 	margin-right: 400px;
 	margin-bottom: 96px;
-}
+}*/
 
 mark.color {
 	color: #3a9a3a;
@@ -79,6 +103,10 @@ nav li {
 	float: left;
 	width: 750px;
 	margin-top: 20px;
+}
+
+h1 {
+	padding-bottom: 2px;
 }
 
 h2 {
@@ -145,14 +173,20 @@ section li {
 }
 
 .socialize_icon {
-	width: 20px;
-	height: 20px;
-	padding: 3px;
-	margin-left: 18px
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	margin-left: 6px;
+}
+
+.side_footer {
+	width: 200px;
+	background-color: #e6e6e6;
+	height: 15px;
 }
 
 footer {
-	width: 100%;
+	width: 725px;
 	height: 100%;
 	font-size: 80%;
 	margin-bottom: 50px;

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Troy's thoughts</title>
+  <link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog_stylesheet.css" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="wrapper">
+
+<!-- MUST UPDATE HERE -->
+  <header>
+    
+    <h1>TROY<mark class="color">leach</mark><span>Blog</span></h1>
+    
+    
+      <nav>
+        <ul>
+          <li><a href="http://troyleach.github.io/index.html">HOME</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_technical.html">BLOG</a></li>
+          <li><a href="mailto:troyleach29@gmail.com?subject=Comments%20on%20my%20Blog">COMMENTS</a></li>
+        </ul>
+      </nav>
+  </header>
+
+
+  <div id="content">
+<!-- Beginning of this awesome blog -->
+    <h2>Ruby: Enumerable#group_by</h2>
+    <h5 class="date">August 29, 2014</h5>
+    <hr class="line">
+    <p>
+      <h3>group_by { |obj| block } -> a_hash</h3>
+<br>
+    </p>
+    <p>
+      From <a class = "links" href="http://www.ruby-doc.org/core-2.1.2/Enumerable.html#method-i-group_by">ruby-docs.org:</a> 
+<br>
+      <i>Groups the collection by result of the blocks. Returns a hash where the
+      keys are the evaluated result from the block and the values are arrays of elements in the
+      collection that correspond to the key.<br>
+      If no block is given an enumerator is returned.</i>
+    </p>
+<br>
+    <p>
+      I have seen this method in passing doing research on other methods but I really never paid much 
+      attention to it until now.<br>
+      In the very simplest terms this methods breaks a collection into groups base on some given criteria.
+      The expectations are a block containing the criteria by which the items in the collection will be grouped. It returns a hash where each key represents a group. Each key's corresponding value is an array containing the members of that group.
+    </p>
+<br>
+    <p>
+      When used on an array, <code>group_by</code> iterates through the array, passing each element to the block. The result value of the block is the group into which the element will be placed. In this first example I will use something similar to Ruby-docs:
+    
+      <img class = "center" src="../unit1_projects/images/wk4tech-1.png" alt="code image" />
+
+      What is happening in this code is the numbers 1 through 15 are passed to the block, this block receives each number as the parameter <code>number.</code> The group that each number is placed into is determined by the result value of the block, <code>number % 3,</code> whose result can be one of 0, 1, or 2, (keys). so what this means is this:
+    
+      <ul class = "indent">
+        <li>key 0 => is an array containing the numbers in the range (1..15) that are evenly divisible by 3</li>
+        <li>key 1 => is an array containing the numbers in the range (1..15) that when divided by 3 leave a remainder of 1</li>
+        <li>key 2 => is an array containing the numbers in the range (1..15) that when divided by 3 leave a remainder of 2.</li>
+      </ul>
+    </p>
+<br>
+    <p>
+      In this next example I added <i>jimbobwillyman"</i> to <code>names.</code> In each <code>names</code> name is passed to the block, which receives it as the parameter <code>names.</code> The block's result is the length of <code>names,</code> and this result is the group into which the name will go.
+      
+      <img class = "center" src="../unit1_projects/images/wk4tech-2.png" alt="code image" />
+      
+      <ul class = "indent">
+        <li>Note that the keys are integers while the names in the groups are strings.</li>
+        <li>The key 4 array, contains those names in <code>names</code> that are 4 charters long.</li>
+        <li>Key 6 array, contains those names in <code>names</code> that are 6 charters long.</li>
+        <li>Key 3 array, contains those names in <code>names</code> that are 3 charters long.</li>
+        <li>Key 14 array... contains those names in <code>names</code>that are 14 charters long.</li>
+      </ul>
+      Come on... thats SUPER cool!!!!! right?
+    </p>
+
+<br>
+    <p>
+      Check this out, in my next example:
+      <img class = "center" src="../unit1_projects/images/wk4tech-3.png" alt="code image" />
+      <ul class = "indent">
+        <li>Note that the keys are strings AND the names in the groups are strings.</li>
+        <li>The key "t" array, contains those names in <code>names</code> that begin with the letter t.</li>
+        <li>Key "r" array, contains those names in <code>names</code> that begin with the letter r.</li>
+        <li>Key "b" array, contains those names in <code>names</code> that begin with the letter b.</li>
+        <li>Key "k" array, contains those names in <code>names</code>that begin with the letter k.</li>
+        <li>Key "j" array... contains those names in <code>names</code>that begin with the letter j.</li>
+      </ul>
+    </p>
+
+<br>
+  <h3>Conclusion</h3>
+    <p>
+      From the limited time I spent researching this method, it seems that this best fits with data base manipulation. Visit this site and watch the <a class="links" href="http://railscasts.com/episodes/29-group-by-month?view=asciicast">screen cast.</a>
+      As you can see, using group_by is not difficult and it gives you a very powerful tool. Without
+      this method, you would have to write more complicated and longer code which reduces readability.
+    </p>  
+<br>
+    <p>
+      I will leave you with this last example... ok well maybe 2...
+      <img class = "center" src="../unit1_projects/images/wk4tech-4.png" alt="code image" />
+      <img class = "center" src="../unit1_projects/images/wk4tech-5.png" alt="code image" />
+    </p>    
+  
+    <!-- this is the end of blog -->
+    <hr class="line">
+  </div>
+
+
+<!-- This is the sidebar -->
+  <aside>
+    <section>
+      <p id="today"></p>
+    </section>
+
+    <section> 
+      <h4>Welcome to Tbits<mark class="color"><i>Technical</i></mark></h4>
+    </section>
+<!-- this is general notes -->
+    <section class="notes">
+      <p>These are bits of Troy's thoughts!</p>
+      <p class="quote">
+        Strive not to be a success, but rather to be of value.<br>
+        -Albert Einstein
+      </p>
+    </section>
+<!-- recent posting -->
+    <section class="cat">
+      <h4>Recent Posts</h4>
+      <ul>
+          <h5>Technical:</h5>
+          <li><a href="http://troyleach.github.io/blog_posts/week4_technical.html">Enumerable#group_by</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week3_technical.html">JavaScrip pros and cons</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week2_technical.html">class vs id</a></a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_technical.html">Favorite website</a></a></li>
+          <h5>Cultural:</h5>
+          <li><a href="http://troyleach.github.io/blog_posts/week4_technical.html">Issue facing Tech</a></a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_cultural.html">Chefs in the Kitchen</a></a></li>
+        </ul>
+    </section>
+
+    <!-- REFERENCES -->
+    <section class="cat">
+      <h4>References</h4>
+        <ul>
+          <li><a href="http://www.ruby-doc.org/core-2.1.2/Enumerable.html#method-i-group_by">ruby-docs.org:</a>
+        </ul>
+    </section>
+
+<!-- SOCIALIZE -->
+    <section class="socialize">
+      <h4>Lets Socialize</h4>
+        <a href="https://www.facebook.com/troy.leach.14"><img class="socialize_icon" src="../unit1_projects/images/fb.png" atl="facebook" /></a>
+
+        <a href="http://www.linkedin.com/pub/troy-leach/a/80b/672"><img class="socialize_icon" src="../unit1_projects/images/in.png" atl="linkedin" /></a>
+
+        <a href="https://twitter.com/troyleach29"><img class="socialize_icon" src="../unit1_projects/images/twitter3.png" atl="twitter" /></a>
+
+        <a href="https://plus.google.com/u/0/100235641551070410533/posts"><img class="socialize_icon" src="../unit1_projects/images/google.png" atl="google plus" /></a>
+    </section>
+
+    <footer class="side_footer">
+      <p></p>
+    </footer>
+
+  </aside>
+
+  <footer>
+    &copy; 2014 TROY<mark class="color">leach</mark>
+  </footer>
+
+ </div><!--close wrapper-->
+
+<!-- MY SCRIPTS -->
+      <script type="text/javascript">
+        var d = new Date();
+        document.getElementById("today").innerHTML = d.toDateString();
+      </script>
+
+</body>
+</html>
