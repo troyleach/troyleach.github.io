@@ -34,15 +34,45 @@
     <h5 class="date">September 6, 2014</h5>
     <hr class="line">
     <p>
-      <h3>class Game</h3>
+      <h3></h3>
+      Classes in Ruby, what are they? How do they work? Lets take a few minutes and talk about classes in Ruby. It is easy for me to think about this in terms of building something. One description that I have heard used is "Classes are the blue print for an object." In an earlier life I was a general contractor, I built homes, finished basements, remodeled kitchens. I used drawings (blue prints) to build from. These drawings describe features of the thing I was building. The structure to hold up the house. what interior finishes to install, what color the walls were. All these things were organized in a set of drawings. Classes work in basically the same fashion. Lets brake this code down.<br>
+<br>      
+      <img class = "center" src="../unit1_projects/images/wk5tech-1.png" alt="code image" />
 <br>
+      In ruby objects contain data and methods that can act on that data. Objects are created from class definitions. This begins with a keyword <code>class</code> then the <code>Name</code>, with a capital letter. Then the code of the class, last is the keyword <code>end</code>.<br>
+<br>
+        <img class = "center" src="../unit1_projects/images/wk5tech-2.png" alt="code image" />
+<br>
+      To create a object in Ruby you call the <code>.new</code> method on that class. In my example, game is the new object of the class game,<br>
+<br>
+        <img class = "center" src="../unit1_projects/images/wk5tech-3.png" alt="code image" />
+<br>
+      You can also add code to the initialize method to set initial values for variables, as I did with @score, every player will start the game with 15 chocolate gelts. Also from this example you can see that initialize method can also take an argument, initialize takes the argument <code>player</code> and it initializes the variable <code>@player1</code>. When initialize takes an argument it must be passed when <code>.new</code> is called. In this example when game is called it passes Troy.<br>
+<br>
+
+        <img class = "center" src="../unit1_projects/images/wk5tech-6.png" alt="code image" />
+<br>
+      You might ask, what is the <code>@player1</code>. This is called an instance variable. Instance variable start with a single '@' sign. The value of each instance variable is different for each object created from a class. In my example the argument "Troy" is stored in the instance variable <code>@player1</code>. The <code>@score</code> I have set the value to a default of 15.
+<br>
+<br>
+      I can now have different featurs to the class Game. In my example I have two more methods, <code>players</code> and <code>scoring</code><br>
+
+<br>
+
+        <img class = "center" src="../unit1_projects/images/wk5tech-4.png" alt="code image" />
+<br>
+      These are very simple. The method players simply returns the instance varaible <code>@player1</code> witch is Troy and tells Troy that he is starting with 15 chocolate gelts, the default value for every starting player. The second method <code>scoring</code> will add one to the instances varaible <code>@score</code> and returns that the player (Troy) now has a total of 16 chocolate gelts.<br>
+<br>
+        <img class = "center" src="../unit1_projects/images/wk5tech-5.png" alt="code image" />
+<br>
+      This last bit of code is just calling on the object <code>game</code> method <code>players, OR, scoring</code> to insure that the method returns the expected result.
     </p>
     
 
 <br>
   <h3>Conclusion</h3>
     <p>
-      
+      As you can see, in the basic of terms, classes are easy to use. It really orinizes the code. Keeps the code DRY, just the way we like it. Please continue to check back in. I am going to try and create the game Dreidel. As you all know, I'm a little busy right now but when ever I have some free time I will spend it, with you, on creating an interactive game!
     </p>  
 <br>
       
@@ -90,7 +120,7 @@
     <section class="cat">
       <h4>References</h4>
         <ul>
-          <li><a href="http://www.ruby-doc.org/core-2.1.2/Enumerable.html#method-i-group_by">ruby-docs.org:</a>
+          <li><a href="http://www.ruby-doc.org/core-2.1.2/Class.html">ruby-docs.org:</a>
         </ul>
     </section>
 
