@@ -86,7 +86,7 @@ figure {
 aside {
 	border-left: 1px solid;
 	width: 200px;
-	height: 350px;
+	height: 100%;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	padding: 0px 1px 0px 5px;
