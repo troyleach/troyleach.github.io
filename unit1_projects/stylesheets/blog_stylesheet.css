@@ -32,7 +32,13 @@ a:hover {
 }
 
 code {
-	background-color: #3a9a3a;
+font-size: .9em;
+color: #666666;
+font-family: Courier, Monospace !important;
+background-color: #d9ffb2;
+border: 1px solid #ddd;
+padding: 1px 3px;
+white-space: pre;
 }
 
 .center {

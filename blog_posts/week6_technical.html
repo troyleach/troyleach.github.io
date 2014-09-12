@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Troy's thoughts</title>
+  <link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog_stylesheet.css" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="wrapper">
+
+  <header>
+    
+    <h1>TROY<mark class="color">leach</mark><span>Blog</span></h1>
+    
+    
+      <nav>
+        <ul>
+          <li><a href="http://troyleach.github.io/index.html">HOME</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_technical.html">BLOG</a></li>
+          <li><a href="mailto:troyleach29@gmail.com?subject=Comments%20on%20my%20Blog">COMMENTS</a></li>
+        </ul>
+      </nav>
+  </header>
+
+
+  <div id="content">
+<!-- Beginning of this awesome blog -->
+    <h2>Ruby closures: Blocs, Procs and Lambdas</h2>
+    <h5 class="date">September 12, 2014</h5>
+    <hr class="line">
+    <p>
+      Blocks, Procs and lambdas, referred to as closures, are one of the most powerful aspects of Ruby!<br>
+    </p>
+<br>
+    <p>
+      <h2>What is a....</h2>
+<br>
+      <h3>Block</h3>
+      Blocks are "chunks of code" that you can drop into another method as input. Sometimes they are called "anonymous functions" (or anonymous methods, Ruby really doesn't have functions) because they have no name but act like methods. You don't find blocks without some method like <code>#each</code> using them. Blocks are used all over the place. Sometimes coders don't even know they are using blocks. Every time a coder uses the word 'do' they are creating a block.
+      <br>
+      <br>
+      <i>A block is a piece of code that is declared but not run in the place it's written. The idea is to leave it up to the receiver of the block to decide when to call it. -- Wolfram Arnold</i>
+      </p>
+<br>     
+      <ul class = "indent">
+        <li>stashing away some code to be run later</li>
+          <ul class = "indent">
+            <li>call backs</li>
+            <li>initializers</li>
+          </ul>
+        <li>separating the body of a loop from the loop itself</li>
+          <ul class = "indent">
+            <li>iterators</li>
+          </ul>
+        <li>running some extra code before and/or after (like the testing we have been doing)</li>
+        <li>making our code look COOL!!</li>
+      </ul>
+<br>
+<br>
+      <p>
+        One would declare a block using <code>do ... end</code> or using squiggly braces <code>{ }</code>. I don't think there is really a convention, or preferred method. I preferred using the squiggly braces because to me it makes my code look better (cooler). One article that I read the writer was pretty adamant about NOT using squiggly braces because they look to much like a hash.
+
+          <img class = "center" src="../unit1_projects/images/wk6tech-1.png" alt="code image" />
+
+      is the EXACT same as
+
+          <img class = "center" src="../unit1_projects/images/wk6tech-2.png" alt="code image" />
+      </p>
+
+      <p>
+        <h3>The default Block</h3>
+        <h4>Unnamed, anonymous, invisible, MAGIC.....</h4>
+        Every method no matter the number of parameters, could get an optional magic block parameter. This is called the default block and the method can call it using <code>yield</code>.
+
+          <img class = "center" src="../unit1_projects/images/wk6tech-3.png" alt="code image" />
+
+        In this example, adding yields 2 to the block, which results in 2 + 1 == 3
+<br>
+<br>
+
+        <h3>Proc (Procedures)</h3>
+        <br>
+        One can not store a block in a variable. So we can turn the block into a Proc and store the Proc in a variable.
+
+          <img class = "center" src="../unit1_projects/images/wk6tech-4.png" alt="code image" />
+
+        A Proc can take parameters too
+
+          <img class = "center" src="../unit1_projects/images/wk6tech-5.png" alt="code image" />
+
+        <h3>The <code>&</code>operator</h3>
+        This operator works differently depending on what it is applied to. This can be confusing for us new Ruby developers. How this operator is applied to our application today:<br>
+        Leading an explicit block parameter with <code>&block</code> will convert the block to a Proc as shown below,
+
+          <img class = "center" src="../unit1_projects/images/wk6tech-6.png" alt="code image" />
+
+        Leading an Proc argument with <code>&</code> will convert the Proc to a block.
+
+          <img class = "center" src="../unit1_projects/images/wk6tech-7.png" alt="code image" />
+
+
+
+
+        <h3>lambdas</h3>
+        <br>
+        Lambdas are more strict than Proc's. the differences between a lambda and a Proc are:
+          <ul class = "indent">
+            <li>lambdas are more strict with regard to argument checking (<code>#arity</code>, the number of parameters.)</li>
+            <li>lambdas can return a value with the return keyword</li>
+          </ul>
+        So basically a lambda cares how many parameters you pass in and a Proc doesn't care as shown in the example below
+        <h4>lambda</h4>
+          <img class = "center" src="../unit1_projects/images/wk6tech-8.png" alt="code image" />
+        <h4>Proc</h4>
+          <img class = "center" src="../unit1_projects/images/wk6tech-9.png" alt="code image" />
+      </p>
+    
+      <p>
+        <h3>Conclusion</h3>
+        In conclusion we went through a couple of the closure types for ruby, blocks, Procs and lambdas. We saw that blocks and Procs act like drop-in code snippets, while lambdas act just like methods. I also hope that through all the examples that you were able to see when you might use these. It was hard for me at first to understand these closures, now that I do it still will take some practice on when to use these!
+    </p>  
+<br>
+      
+  
+    <!-- this is the end of blog -->
+    <hr class="line">
+  </div>
+
+
+<!-- This is the sidebar -->
+  <aside>
+    <section>
+      <p id="today"></p>
+    </section>
+
+    <section> 
+      <h4>Welcome to Tbits<mark class="color"><i>Technical</i></mark></h4>
+    </section>
+<!-- this is general notes -->
+    <section class="notes">
+      <p>These are bits of Troy's thoughts!</p>
+      <p class="quote">
+        If you want to achieve greatness stop asking for permission.<br>
+        -Anonymous
+      </p>
+    </section>
+<!-- recent posting -->
+    <section class="cat">
+      <h4>Recent Posts</h4>
+      <ul>
+          <h5>Technical:</h5>
+          <li><a href="http://troyleach.github.io/blog_posts/week6_technical.html">Ruby closures</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week5_technical.html">Classes in Ruby</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week4_technical.html">Enumerable#group_by</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week3_technical.html">JavaScrip pros and cons</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week2_technical.html">class vs id</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_technical.html">Favorite website</a></li>
+          <h5>Cultural:</h5>
+          <li><a href="http://troyleach.github.io/blog_posts/week6_cultural.html">This just isn't about race anymore</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week5_cultural_blog.html">Pairing and giving feedback</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week4_cultural_blog.html">Issue facing Tech</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_cultural.html">Chefs in the Kitchen</a></li>
+        </ul>
+    </section>
+
+    <!-- REFERENCES -->
+    <section class="cat">
+      <h4>References</h4>
+        <ul>
+          <li>none</a>
+        </ul>
+    </section>
+
+<!-- SOCIALIZE -->
+    <section class="socialize">
+      <h4>Lets Socialize</h4>
+        <a href="https://www.facebook.com/troy.leach.14"><img class="socialize_icon" src="../unit1_projects/images/fb.png" atl="facebook" /></a>
+
+        <a href="http://www.linkedin.com/pub/troy-leach/a/80b/672"><img class="socialize_icon" src="../unit1_projects/images/in.png" atl="linkedin" /></a>
+
+        <a href="https://twitter.com/troyleach29"><img class="socialize_icon" src="../unit1_projects/images/twitter3.png" atl="twitter" /></a>
+
+        <a href="https://plus.google.com/u/0/100235641551070410533/posts"><img class="socialize_icon" src="../unit1_projects/images/google.png" atl="google plus" /></a>
+    </section>
+
+    <footer class="side_footer">
+      <p></p>
+    </footer>
+
+  </aside>
+
+  <footer>
+    &copy; 2014 TROY<mark class="color">leach</mark>
+  </footer>
+
+ </div><!--close wrapper-->
+
+<!-- MY SCRIPTS -->
+      <script type="text/javascript">
+        var d = new Date();
+        document.getElementById("today").innerHTML = d.toDateString();
+      </script>
+
+</body>
+</html>
