@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Troy's thoughts</title>
+  <link rel="stylesheet" type="text/css" href="../unit1_projects/stylesheets/blog_stylesheet.css" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="wrapper">
+
+  <header>
+    
+    <h1>TROY<mark class="color">leach</mark><span>Blog</span></h1>
+    
+    
+      <nav>
+        <ul>
+          <li><a href="http://troyleach.github.io/index.html">HOME</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_technical.html">BLOG</a></li>
+          <li><a href="mailto:troyleach29@gmail.com?subject=Comments%20on%20my%20Blog">COMMENTS</a></li>
+        </ul>
+      </nav>
+  </header>
+
+
+  <div id="content">
+<!-- Beginning of this awesome blog -->
+    <h2>SQL Injection... Should this <i>scare</i> you??</h2>
+    <h5 class="date">September 18, 2014</h5>
+    <hr class="line">
+
+    <div class="pic_right">
+    <img src="../unit1_projects/images/wk7tech-1.png" alt="t-shirt image" />
+    </div>
+    <p>
+      <h2>It should..</h2>
+<br>
+      <h3><i>What is it...</i></h3>
+      Structured Query Language (SQL) Injection is one of the many web attack mechanisms to steal data from originations, suppliers, employees, and customers!! Really.. from <b><i><mark class = "color">YOU!!!</mark></i></b> It is one of the most common application attack techniques used today. It is an attack that takes advantage of improper coding of the web application that allows hackers to "inject" SQL commands into, say, login in forms to allow them access into your life! (or the database). It is so popular that when I did started my research I typed in SQL Injection and what do you think the one of the first 3 links were? Yeah t-shirts, there are even t-shirts for your <i>kid...</i>
+    </p>
+
+    
+<br>
+        
+          <img class="pic_left" src="../unit1_projects/images/wk7tech-2.png" alt="baby image" />
+                          
+    <p>
+      <b>Web applications (web apps) and Databases (db).</b><br>
+      Db are a pretty much central to our everyday life on the web. They store data needed for web sites to deliver specific content to visitors and produce information to customers, suppliers, employees, (<b><i><mark class = "color">YOU!!!</mark></i></b>) or update, change information given by us, the user! Lets say the user visits a site that needs a user name and password. When the user submits their details a SQL query is generated and submitted to the data base for verification, once the information is verified, access is allowed! Since the site needs to be public, how else would the public access it, the security in place needs to allow public web traffic to communicate with the web app, the web app has open access to the db, it needs to change, update, add too, I'm sure the list goes on. SQL is the language the computer uses to perform those actions. In fact, as far as I know, SQL is the only way web apps to interact with database. Firewalls and other same type barriers wont work because the site needs to be public.
+    </p>
+<br>
+    <p>
+      <b>SQL Injection</b><br>
+      The hacker uses SQL Injection to access the data bases. SQL Injection is the hacking technique in which attempts to pass SQL command statements though web applications for execution by the backend database. If not sanitized properly this will allow hackers to view information from the database OR even wipe it out. Using SQL Injection, the hacker can input specifically crafted SQL commands in hopes of by passing the login page barrier and see whats behind it. This is only possible if the inputs are not properly sanitized (made invulnerable) and sent directly with SQL query to the database. SQL Injection vulnerabilities provides the means for hacker to communicate directly to the data base. In 2012 a study was done that showed on average web application received 4 attack campaigns per month and retailers received twice as many attacks.. DUH...
+    </p>
+<br>
+    <p>
+      <b>Example</b>
+        <p>Here is a common application used to verify user login</p>
+      <form class="indent">
+          Username:
+          <input input type="text" nmae="username" size="15" maxlength="30" / >
+        </p><br>
+        <p>
+           Password:
+          <input input type="text" nmae="username" size="15" maxlength="30" / >
+        </p>
+      </form><br>
+
+      <table>
+        <th colspan="2">SQL query</th>
+        <tr>
+          <td>
+            <div class="table_border">1</div>
+          </td>
+          <td>
+            <div>SELECT * FROM users WHERE Username='$username' AND Password='$password'</div>
+          </td>
+        </tr>
+      </table>
+    </p><br>
+<br>
+    <p>
+      This is designed to show all records from the table <code>user</code> for a username and password supplied by a user. Using a web interface when prompted, a malicious user might enter"<br>
+<br>
+      <code>1' or '1' = '1</code><br>
+<br>
+    </p>
+
+    <table>
+        <th colspan="2">Resulting in the query</th>
+        <tr>
+          <td>
+            <div class="table_border">1</div>
+          </td>
+          <td>
+            <div>SELECT * FROM Users WHERE Username='1' OR '1' = '1' AND Password='1' OR '1' = '1'</div>
+          </td>
+        </tr>
+      </table><br>
+      <p>
+        The hacker has effectively injected a whole OR condition into the authentication process. Worse, the condition '1' = '1' is always true, so this SQL query will always result in the  in the authentication process being bypassed. Using characters like ";" to append another query on the end of an existing one, and -- to comment out(and therefore cut off) a part of an existing query, a hacker could potentially delete entire tables, or change the data they contain. The consequences of a SQL injection attach could be:
+        <ul class="indent">
+          <li>Loss of data confidentiality</li>
+          <li>Loss of data integrity</li>
+          <li>Loss of data</li>
+          <li>Compromise of the entire network</li>
+        </ul>
+      </p>
+      <p>The above code taken from <a href="http://www.enterprisenetworkingplanet.com/netsecur/article.php/3866756/10-Ways-to-Prevent-or-Mitigate-SQL-Injection-Attacks.htm">Enterprise Networking Planet</a></p><br>
+
+  <h3>Conclusion</h3>
+    <p>
+      I want to be a <b><i><mark class = "color">HACKER</mark></i></b> when I grow up! As newbs, how can we combat this issue? Learn how it done! The only way to destroy something is to know how it was created! So it seems that SQL injections thrive on poorly written code. As 'newbs' we really need to focus on security when dealing with applications. Assume all user-submitted data is evil, validate and sanitize everything. Don't use dynamic SQL when it can be avoided. Get rid of any database functionality that you don't need to prevent a hacker from taking advantage of it.
+    </p>  
+<br>
+      
+  
+    <!-- this is the end of blog -->
+    <hr class="line">
+  </div>
+
+
+<!-- This is the sidebar -->
+  <aside>
+    <section>
+      <p id="today"></p>
+    </section>
+
+    <section> 
+      <h4>Welcome to Tbits<mark class="color"><i>Technical</i></mark></h4>
+    </section>
+<!-- this is general notes -->
+    <section class="notes">
+      <p>These are bits of Troy's thoughts!</p>
+      <p class="quote">
+        Do one thing every day that scares you.<br>
+        ~Anonymous
+      </p>
+    </section>
+<!-- recent posting -->
+    <section class="cat">
+      <h4>Recent Posts</h4>
+      <ul>
+          <h5>Technical:</h5>
+          <li><a href="http://troyleach.github.io/blog_posts/week5_technical.html">Classes in Ruby</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week4_technical.html">Enumerable#group_by</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week3_technical.html">JavaScrip pros and cons</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week2_technical.html">class vs id</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_technical.html">Favorite website</a></li>
+          <h5>Cultural:</h5>
+          <li><a href="http://troyleach.github.io/blog_posts/week5_cultural_blog.html">Pairing and giving feedback</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week4_cultural_blog.html">Issue facing Tech</a></li>
+          <li><a href="http://troyleach.github.io/blog_posts/week1_cultural.html">Chefs in the Kitchen</a></li>
+        </ul>
+    </section>
+
+
+    <!-- REFERENCES -->
+    <section class="cat">
+      <h4>References</h4>
+        <ul>
+          <li><a href="https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet">SQL Injection Prevention Cheat Sheet</a></li>
+          <li><a href="http://web1.cs.columbia.edu/~angelos/Papers/sqlrand.pdf">SQLrand: Preventing SQL Injection Attachs</a></li>
+          <li><a href="http://www.zazzle.com/sql_injection_t_shirts-235584528701945233">Get your t-shirt here</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/SQL_injection">wikipedia.org</a></li>
+          <li><a href="http://www.enterprisenetworkingplanet.com/netsecur/article.php/3866756/10-Ways-to-Prevent-or-Mitigate-SQL-Injection-Attacks.htm">Mitigate SQL injection attacks</a></li>        
+        </ul>
+    </section>
+
+<!-- SOCIALIZE -->
+    <section class="socialize">
+      <h4>Let's Socialize</h4>
+        <a href="https://www.facebook.com/troy.leach.14"><img class="socialize_icon" src="../unit1_projects/images/fb.png" atl="facebook" /></a>
+
+        <a href="http://www.linkedin.com/pub/troy-leach/a/80b/672"><img class="socialize_icon" src="../unit1_projects/images/in.png" atl="linkedin" /></a>
+
+        <!-- <a href="https://twitter.com/troyleach29"><img class="socialize_icon" src="../unit1_projects/images/twitter3.png" atl="twitter" /></a> -->
+
+        <a href="https://plus.google.com/u/0/100235641551070410533/posts"><img class="socialize_icon" src="../unit1_projects/images/google.png" atl="google plus" /></a>
+
+    </section>
+
+    <section class = "tweets">
+      <a class="twitter-timeline" href="https://twitter.com/troyleach29" data-widget-id="512008005106155520">Tweets by @troyleach29</a>
+    </section>
+  </aside>
+
+  <footer>
+    &copy; 2014 TROY<mark class="color">leach</mark>
+  </footer>
+
+ </div><!--close wrapper-->
+
+<!-- MY SCRIPTS -->
+      <script type="text/javascript">
+        var d = new Date();
+        document.getElementById("today").innerHTML = d.toDateString();
+      </script>
+
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      </script>
+
+</body>
+</html>
