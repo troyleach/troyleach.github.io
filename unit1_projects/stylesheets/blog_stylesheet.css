@@ -61,7 +61,16 @@ img {
 }
 
 .indent {
-	margin-left: 5%;
+	margin-left: 2%;
+}
+
+.indent_text {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	text-align: justify;
+	width: 600px;
 }
 
 header {
@@ -82,15 +91,16 @@ header span {
 
 .line {
 	margin-top: 1px;
-	margin-right: 5px;
+	margin-right: 0;
 	margin-bottom: 5px;
 }
 
-/*.bottom_line {
-	margin-top: 30px;
-	margin-right: 400px;
-	margin-bottom: 96px;
-}*/
+
+.bottom_line {
+	margin-top: 15px;
+	margin-right: 0;
+	margin-bottom: 30px;
+}
 
 mark.color {
 	color: #3a9a3a;
@@ -114,6 +124,7 @@ nav li {
 }
 
 #content {
+	border: none;
 	float: left;
 	width: 750px;
 	margin-top: 20px;
@@ -132,9 +143,11 @@ p {
 }
 
 .date {
+	padding: 0 0 4px 350px;
 	font-family: times serit;
 	font-style: oblique;
 	font-weight: 100;
+	font-size: .6em;
 }
 
 .pic_right {
@@ -240,13 +253,13 @@ section li {
 }
 
 footer {
-	width: 725px;
+	width: 730px;
 	height: 100%;
 	font-size: 80%;
 	margin-bottom: 5px;
 	padding: 1px 0 0 20px;
 	border: none;
 	background-color: #dbe4de;
-	clear: both;
+	clear: left;
 	text-align: center;
 }
