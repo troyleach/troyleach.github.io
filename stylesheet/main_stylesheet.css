@@ -1,0 +1,286 @@
+/* this file is for my blogs */
+
+
+article, aside, figure, footer, header, hgroup, menu, nav, section 
+{ display: block; }
+
+* { margin : 0; padding : 0; }
+
+body {
+    background-color: #ffffff;
+	  border: none;
+	  width: 650px;
+    height: 400px;
+    line-height: 1.5em;
+    font-family: 'Roboto Condensed', Arial, san-serif;
+    font-size: 1em;
+    margin: 0 auto;
+    position: relative;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3a9a3a;
+}
+
+.links {
+  text-decoration: underline;
+}
+
+mark.color {
+  color: #3a9a3a;
+  background: none;
+}
+
+
+
+.page_header {
+	border: none;
+  background-color: #ffffff;
+  position: fixed;
+  width: 650px;
+  height: 50px;
+  top: 0;
+}
+
+
+
+header h1 {
+  padding-top: 15px;
+  font-family: georgia, times, serif;
+}
+
+header span {
+  padding: 0 0 4px 360px;
+  font-family: 'Playball', cursive;
+  
+}
+
+nav {
+  border: none;
+  background-color: #dbe4de;
+  height: 22px; 
+}
+
+nav ul {
+  padding: 0px 0px 0px 490px; 
+  margin: 0px;
+}
+
+nav li {
+  display: inline;
+  font-size: 12px;
+  padding: 2px;
+}
+
+.mail {
+  width: 16px;
+  height: auto;
+}
+
+#wrapper {
+    background-color: #999F9B;
+    padding-top: 70px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.page_content {
+	border: 1px solid;        /* when I set this to zero it messes up my bottom line? */
+  background-color: #ffffff;
+  margin: 0 auto;
+	width: 630px;     
+  height: 340px;
+  margin-bottom: 9px;
+}
+
+.about {
+  padding-top: 30px;
+}
+
+.troy_img {
+  float: left;
+  width: 175px;
+  height: auto;
+  padding: 25px;
+}
+
+.h1group {
+  font-size: 35px;
+  font-family: 'Playball', cursive;
+} 
+
+.text {
+  font-size: 1em;
+  margin: 20px 20px 55px 20px;
+}
+
+.line {
+  margin: 15px 30px 0 15px;
+}
+
+button {
+  display: inline-block;
+  padding: 4px 5px;
+}
+
+.btn_one {
+  padding-bottom: 5px;
+}
+
+.button_one:hover {
+  color: #5eabd9;
+}
+
+.button_two:hover {
+  color: #e70606;
+}
+
+.button_three:hover {
+  color: #062ce7;
+}
+
+.button_four:hover {
+  color: #06a9e7;
+}
+
+
+table {
+  border: 2px;
+  margin: 0 auto;
+}
+
+td, th {padding: 2px;}
+
+.col_three {
+  padding: 13px 8px 0 10px;
+}
+
+.page_footer {
+  border: none;
+	width: 650px;
+  height: 100%;
+  font-size: 80%;
+  margin-bottom: 5px;
+  padding: 0;
+  background-color: #dbe4de;
+  text-align: center;
+}
+
+
+
+
+/*All media code goes under here*/
+
+@media screen and (max-width: 960px) {
+   
+   .header {
+    text-align: center;
+    padding: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    }
+    
+    .index {
+        margin-bottm: 3%;
+    }
+   
+    
+    .page_header {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .page_left {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .page_content {
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .images {
+        display: none;
+        padding: 1%;
+        margin: 3%;
+    }
+    
+    .page_right {
+        padding: 1%;
+        margin: 3%;
+    }
+
+    .page_footer {
+        padding: 1%;
+        margin: 3%;
+    }
+}
+
+
+
+/*this is for Iphones*/
+@media screen and (max-width: 480px) {
+
+  .header {
+      text-align: center;
+      padding: 1%;
+      margin-left: 3%;
+      margin-right: 3%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      }
+      
+      .index {
+          margin-bottm: 3%;
+      }
+     
+      
+      .page_header {
+          padding: 1%;
+          margin: 3%;
+      }
+      
+      .page_left {
+          padding: 1%;
+          margin: 3%;
+      }
+      
+      .page_content {
+          padding: 1%;
+          margin: 3%;
+      }
+      
+      .images {
+          display: none;
+          padding: 1%;
+          margin: 3%;
+      }
+      
+      .page_right {
+          padding: 1%;
+          margin: 3%;
+      }
+  
+      .page_footer {
+          padding: 1%;
+          margin: 3%;
+      }
+  }
+
+/* Clear Floated Elements 
+.clearfix:before, .clearfix:after {content: "\0020"; 
+display: block; height: 0; visibility: hidden;}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+*/
+

@@ -1,0 +1,45 @@
+/* File for the projects pages*/
+
+.box_left {
+	float: left;
+	margin: 5px;
+	padding-right: 4px;
+	border-right: .08em solid;
+	width: 200px;
+	height: 250px;
+}
+
+ul {
+	margin-left: 25px;
+}
+
+.box_middle {
+	float: left;
+	margin-top: 5px;
+	padding-right: 4px;
+	border-right: .08em solid;
+	width: 200px;
+	height: 250px;
+}
+
+.js_button {
+	margin-left: 70px;
+}
+
+.box_right {
+	float: right;
+	margin: 5px;
+	border: none;
+	width: 200px;
+}
+
+.p_borders {
+  border-top: 3px solid;
+  border-bottom: 1px dashed;
+  padding: 3px 0 5px 0;
+  margin: 2px;
+}
+
+.bottom {
+	margin: 290px 15px 0 15px;
+}
