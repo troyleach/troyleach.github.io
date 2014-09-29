@@ -28,6 +28,18 @@ a:hover {
   color: #3a9a3a;
 }
 
+code {
+font-size: .9em;
+color: #666666;
+font-family: Courier, Monospace !important;
+background-color: #d9ffb2;
+border: 1px solid #ddd;
+padding: 1px 3px;
+white-space: pre;
+}
+
+
+
 h3 {
   padding-left: 5px;
 }
@@ -43,6 +55,12 @@ mark.color {
 
 p {
   padding: 0 5px 0px 5px;
+}
+
+.picture {
+  width: 98%;
+  height: auto;
+  margin: 5px auto 5px auto;
 }
 
 
@@ -196,6 +214,11 @@ h2 {
   font-size: 2.5em;
 }
 
+h3 {
+  font-size: 1em;
+  padding: 2px;
+}
+
 .date {
   font-size: 14px;
   padding-top: 10px;
@@ -211,7 +234,65 @@ h2 {
   width: 100%;
 }
 
+.output {
+  font-family: times serit;
+  font-style: oblique; 
+  font-size: 1em;
+  color: green;
+  padding: 0;
+  margin-left: 40px;
+}
 
+.ref_line {
+  width: 20%;
+  margin-top: 35px;
+}
+
+.references {
+  font-family: times serit;
+  font-style: oblique;
+  font-weight: 100; 
+  font-size: .5em;
+}
+
+/*THIS IS MY CODE BLOCK TABLE*/
+table.code_block {
+  border-radius: 5px;
+  background-color: #dbe4de;
+  margin: 10px auto 2px auto;
+  padding: 0; 
+  width: 98%;
+  font-size: .8em;
+}
+
+th {
+  text-align: left;
+  padding-left: 2px;
+}
+
+tr {
+  font-family: Courier, Monospace !important;
+}
+
+td {
+  color: #666666;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.code_block {
+  padding-left: 0;
+}
+
+.table_border {
+  width: 12px;
+  
+}
+
+.table_border2 {
+  border-right: 3px solid;
+  border-color: #gray;
+}
 
 
 
@@ -268,12 +349,11 @@ section li {
   margin-left: 1px;
 }
 
-
-
 .bottom_line {
   width: 90%;
   margin: 25px auto 25px auto;
 }
+
 
 
 .page_footer {
