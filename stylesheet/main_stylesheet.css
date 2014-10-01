@@ -27,6 +27,10 @@ a:hover {
   color: #3a9a3a;
 }
 
+.hidden {
+  display: none;
+}
+
 .links {
   text-decoration: underline;
 }
