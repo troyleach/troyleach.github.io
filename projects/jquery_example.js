@@ -29,7 +29,7 @@ $('body').css({'background-color': '#ffffff'})
  
  $('img').on('mouseleave', function(e){
      e.preventDefault()
-    $(this).attr('src', '../../imgs/dbc_logo.jpg')
+    $(this).attr('src', '../images/dbc_logo.jpg')
   })
 
 
