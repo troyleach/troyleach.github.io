@@ -1,0 +1,52 @@
+body {
+	background-color: #000000;
+}
+
+.wrapper {
+	border: none;
+	text-align: center;
+}
+
+div {
+	color: red;
+	font-size: 50px;
+	text-shadow: 2px 2px 8px #ff8000;
+}
+
+h3 {
+	color: green;
+	margin-left: 460px;
+
+}
+
+button {
+	margin: 0 auto;
+	padding: 7	px;
+}
+
+
+
+.hidden {
+	display: none;
+}
+
+.js_botton {
+	margin: 0 auto 0 auto;
+}
+
+.css-typing
+{
+    width: 30em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
