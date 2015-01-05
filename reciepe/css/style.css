@@ -1,0 +1,287 @@
+/**********************************
+GENERAL
+***********************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /*display: inline-block;*/
+}
+
+#wrapper {
+  border: none;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  min-width: 100%;
+  margin-top: -250px;
+}
+
+/**********************************
+HEADING
+***********************************/
+
+#header {
+  border: none;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
+  text-align: center;
+}
+/*I WANT TO USE JS TO MAKE THIS A ROLLER OVER. WHEN ROLLED ON RECIEPS WOULD BE A LINK BACK TO THE BLOG'S SHEET*/
+#header h1 {
+  font-family: 'Limelight', cursive;
+  font-size: 6em;
+  margin-top: auto;
+}
+
+mark {
+  background: none;
+  color: #ff0000;
+}
+
+.layer1 {
+  z-index: 1;
+  opacity: 0.2;
+  border: none;
+  position: absolute;
+  min-width: 100%;
+}
+
+.layer2 {
+  z-index: 1;
+  position: absolute;
+  color: red;
+  font-size: .5em;
+  min-width: 100%;
+  margin-top: 14px;
+}
+
+header a {
+  color: #fff;
+}
+
+header a:hover {
+  color: #fff;
+  text-shadow: 0px 0px 20px #ff0000;
+}
+
+/**********************************
+page contents
+***********************************/
+
+#title {
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+#title h1 {
+  color: #000;
+  font-size: 2em;
+  padding-top: 3%;
+}
+
+#title h4 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#share {
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+#share p {
+  padding: 0 0 2% 0;
+  font-size: .9em;
+}
+
+#openning {
+  margin: 2%;
+  line-height: 1.5em;
+}
+
+#openning p::first-letter {
+  font-size: 200%;
+  font-style: oblique;
+  color: #ff0000;
+}
+
+#receipe {
+  width: 300px;
+  height: 100%;
+  float: left;
+  border: 1px solid red;
+  margin: 5%;
+  margin-right: 35px;
+}
+
+#receipe h3 {
+  font-size: 1.2em;
+  font-style: oblique;
+  padding: 1%;
+}
+
+#receipe p {
+  font-size: .8em;
+  padding: 1%;
+}
+
+
+#receipe li {
+  margin-left: 10%;
+  padding: 1%;
+  
+}
+
+#direction {
+  margin: 6%;
+  line-height: 1.5em;
+}
+
+#direction li {
+  margin: 2%;
+}
+
+hr {
+  width: 75%;
+}
+
+#reference {
+  font-size: .8em;
+  margin: 2%;
+}
+
+#reference p {
+  padding: 0 0 2% 0;
+  font-size: 1em;
+}
+
+#footer {
+  position: relative;
+  height: 100px;
+}
+
+#footer h1 {
+  border: none;
+  position: absolute;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 10px;
+  min-width: 100%;
+  font-family: 'Limelight', cursive;
+}
+
+#footer div {
+  position: absolute;
+  font-size: .6em;
+  text-align: center;
+  margin-top: 80px;
+  min-width: 100%;
+}
+
+#footer a {
+  color: #fff;
+}
+
+#footer a:hover {
+  color: #fff;
+  text-shadow: 0px 0px 20px #ff0000;
+}
+
+
+
+/**********************************
+share icons
+***********************************/
+
+.fa-twitter {
+  border-radius: 50%;
+  background: #4099ff;
+  color: #ffffff;
+  padding: 0.05em 0.07em;
+  }
+
+.fa-facebook {
+  border-radius: 100%;
+  background: #3b5998;
+  color: #ffffff;
+  padding: 0.05em 0.3em;
+  }
+
+.fa-envelope {
+  border-radius: 100%;
+  background: #ff0000;
+  color: #ffffff;
+  padding: 0.05em 0.07em;
+}
+
+/**********************************
+colors
+***********************************/
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+header {
+  background: #000;
+}
+
+#title h4 {
+  color: #777;
+}
+
+#receipe {
+  background-color: #eee;
+}
+
+#receipe li {
+  color: #ff0000;
+}
+
+#receipe p {
+  color: #777;
+}
+
+#share {
+  color: #777;
+}
+
+#reference p {
+  color: #777;
+}
+
+a {
+  color: #777;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
