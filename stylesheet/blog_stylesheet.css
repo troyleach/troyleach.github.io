@@ -1,19 +1,27 @@
 /* this file is for my blogs */
 
 
-* { margin : 0; padding : 0; }
+* { margin: 0; padding: 0; }
 
 body {
     background-color: #ffffff;
-	  border: none;
-	  width: 960px;
-    height: 1600px;
+    border: none;
+    /*width: 960px;*/
+    /*height: 2500px;*/
     line-height: 1.5em;
     font-family: 'Roboto Condensed', Arial, san-serif;
     font-size: 1em;
     margin: 0 auto;
     position: relative;
     text-align: justify;
+}
+
+#wrapper {
+  border: none;
+  max-width: 960px;
+  background-color: #ffffff;
+  padding-top: 70px;
+  margin: 0 auto;
 }
 
 a {
@@ -46,9 +54,9 @@ h3 {
   padding-left: 5px;
 }
 
-.hidden {
+/*.hidden { this is for the fade in blog that I took out
   display: none;
-}
+}*/
 
 .links {
   text-decoration: underline;
@@ -78,10 +86,10 @@ p {
 
 
 .page_header {
-	border: none;
+  border: none;
   background-color: #ffffff;
   position: fixed;
-  width: 960px;
+  width: 100%;
   height: 50px;
   top: 0;
 }
@@ -92,41 +100,38 @@ header h1 {
 }
 
 header span {
-  padding: 0 0 4px 715px;
+  border: none;
   font-family: 'Playball', cursive;
+  margin-left: 710px;
 }
 
 nav {
   border: none;
+  max-width: 960px;
   background-color: #dbe4de;
-  height: 22px;
   margin-bottom: 5px;
 }
 
 nav ul {
-  padding: 0px 0px 0px 760px;
-  margin-bottom: 5px; 
-
+  border: none;
+  margin-bottom: 15px;
+  font-size: .7em; 
+  /*padding-left: 79%;*/
+  text-align: center;
 }
 
 nav li {
+  border: none;
   display: inline;
-  font-size: 12px;
-  padding: 2px;
+  padding: 12px 0 12px 0;
 }
 
 
 
-#wrapper {
-    background-color: #ffffff;
-    padding-top: 70px;
-    width: 100%;
-    margin: 0 auto;
-}
 
 
 /****************************************************/
-/*            LEFT COLUMN                           */
+/*            PAGE LEFT                             */
 /****************************************************/
 
 .page_left {
@@ -140,7 +145,8 @@ nav li {
 }
 
 .center {
-  width: 80px;
+  width: 100px;
+  border-radius: 100%;
   height: auto;
   display: block;
   margin-left: auto;
@@ -221,8 +227,8 @@ td, th {padding: 3px;}
   margin-left: 9px;
   background-color: #f7f9f8;
   float: left;
-	width: 620px;     
-  height: 100%;
+	width: 620px;
+  margin-bottom: 4px;     
 }
 
 h1 {
@@ -338,8 +344,8 @@ td {
 
 
  /****************************************************/
-/*            RIGHT COLUMN                           */
-/****************************************************/
+/*            PAGE RIGHT                             */
+/*****************************************************/
 
 .page_right {
   border: none;
@@ -347,7 +353,8 @@ td {
   line-height: 1em;
 	float: right;
 	width: 201px;
-  height: 100%;
+  margin-left: 9px;
+  /*height: 100%;*/
 }
 
 #today {
@@ -402,7 +409,7 @@ section li {
 
 .page_footer {
   border: none;
-	width: 600px;
+	width: 620px;
   height: 100%;
   font-size: 80%;
   margin-bottom: 5px;
@@ -413,11 +420,7 @@ section li {
   text-align: center;
 }
 
-
-
-
-
-/******* TOOL TIPS **************/
+/******* TOOL TIPS for my bio page DO NOT DELETE**************/
 
 /* Some basic styles */
 *,

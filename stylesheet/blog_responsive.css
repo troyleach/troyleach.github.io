@@ -1,0 +1,120 @@
+@media screen and (max-width: 680px) {
+
+  /*****************************************
+    HEADER - change things here for mobile
+  ******************************************/
+
+  .hidden {
+    display: none;
+  }
+
+  .page_header {
+    border: none;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+  }
+
+  header h1 {
+    border: none;
+    /*background-color: red;*/
+    text-align: center;
+    width: 100%;
+  }
+
+  header span {
+    
+  }
+
+  nav {
+    /*background-color: red;*/
+    /*width: 960px;*/
+    
+  }
+
+  nav ul {
+  margin-bottom: 5px;
+  text-align: center;
+  padding-left: 0;
+
+  }
+
+  nav li {
+  display: inline;
+  font-size: 105%;
+  padding: 12px 0 12px 0;
+  }
+
+
+  /**********************************
+    PAGE LEFT
+  ***********************************/
+
+  .page_left {
+    width: 100%;
+    text-align: center;
+    padding: 0 20% 0 20%;
+    
+  }
+
+  figcaption {
+    display: none;
+  }
+
+  .txt {
+    display: none;
+  }
+
+  .git {
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+  /**********************************
+    PAGE CONTENTS
+  ***********************************/
+  .page_content {
+    border: none;
+    width: auto;
+    clear: both;
+    padding: 5%;
+    margin-right: 2%;
+  }
+
+  
+
+  .title {
+    font-size: 2em;
+    text-align: center;
+  }
+
+
+  /**********************************
+    PAGE RIGHT
+  ***********************************/
+
+  .page_right {
+    border: none;
+    width: auto;
+    padding: 0 20% 0 20%;
+    margin-right: 2%;
+    margin-left: 9px;
+    margin-top: 2%;
+  }
+  
+
+  /**********************************
+    FOOTER
+  ***********************************/
+
+  .page_footer {
+    border: none;
+    margin-left: 0;
+    width: 100%;
+    clear: both;
+  }
+ 
+
+}
+
+/*text-shadow: 0px 0px 20px #219eb3;*/
