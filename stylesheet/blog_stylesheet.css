@@ -224,7 +224,7 @@ td, th {padding: 3px;}
 
 .page_content {
 	border: none;
-  margin-left: 9px;
+  margin-left: 6px;
   background-color: #f7f9f8;
   float: left;
 	width: 620px;
@@ -326,7 +326,8 @@ td {
 }
 
 /****************************************************/
-/*MY SOCAIL MEDIA LINKS*/
+/*           MY SOCAIL MEDIA LINKS                  */
+/****************************************************/
 
 .socail_media {
   text-align: center;
@@ -343,7 +344,7 @@ td {
 
 
 
- /****************************************************/
+/*****************************************************/
 /*            PAGE RIGHT                             */
 /*****************************************************/
 
@@ -353,8 +354,7 @@ td {
   line-height: 1em;
 	float: right;
 	width: 201px;
-  margin-left: 9px;
-  /*height: 100%;*/
+  margin-right: 5px;
 }
 
 #today {
@@ -383,7 +383,7 @@ section h4 {
 }
 
 .cat {
-  padding: 0 0 10px 0;
+  padding: 3%;
 }
 
 section li {
@@ -412,8 +412,8 @@ section li {
 	width: 620px;
   height: 100%;
   font-size: 80%;
-  margin-bottom: 5px;
-  margin-left: 130px;
+  margin-bottom: 15px;
+  margin-left: 127px;
   padding: 1px 0 0 20px;
   background-color: #dbe4de;
   clear: left;
