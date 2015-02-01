@@ -170,6 +170,10 @@ figcaption {            /* why cant i get this to center auto */
   text-align: center;
 }
 
+article a {
+  color: #ababab;
+}
+
 .typ_bd {
   border-top: 3px solid #000000;
   line-height: .9em;
