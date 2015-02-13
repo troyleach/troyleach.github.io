@@ -85,7 +85,10 @@
     clear: both;
     padding: 5%;
     margin-right: 2%;
+  }
 
+  .page_content {
+    font-size: 1.4em;
   }
 
   

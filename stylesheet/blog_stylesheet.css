@@ -235,13 +235,28 @@ td, th {padding: 3px;}
   margin-bottom: 4px;     
 }
 
+.page_image {
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+
+.page_content strong {
+  margin: 15px;
+  font-style: oblique;
+}
+
+.page_content p {
+  font-size: 1.2em;
+}
+
 h1 {
   padding-bottom: 2px;
 }
 
 h2 {
   margin: 5px 0 0 10px;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 h3 {
@@ -265,7 +280,7 @@ h3 {
 
 .line {
   clear: both;
-  margin: 0 10px 0px 10px;
+  margin: 0 10px 20px 10px;
   min-width: 90%;
 }
 
@@ -276,6 +291,18 @@ h3 {
   color: green;
   padding: 0;
   margin-left: 40px;
+}
+
+.ref_block {
+  border: none;
+  background-color: ;
+  width: 75%;
+  margin: 15px auto;
+  font-style: oblique;
+  padding: 15px;
+  -moz-box-shadow:    1px 1px 3px 2px #cbd8d2;
+  -webkit-box-shadow: 1px 1px 3px 2px #cbd8d2;
+  box-shadow:         1px 1px 3px 2px #cbd8d2;
 }
 
 .ref_line {
@@ -359,6 +386,7 @@ td {
 	float: right;
 	width: 201px;
   margin-right: 5px;
+  margin-bottom: 35px;
 }
 
 #today {
@@ -388,6 +416,11 @@ section h4 {
 
 .cat {
   padding: 3%;
+}
+
+.references {
+  background-color: red;
+  margin-bottom: 25px;
 }
 
 section li {
