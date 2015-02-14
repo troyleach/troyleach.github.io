@@ -246,6 +246,8 @@ td, th {padding: 3px;}
 .title_image {
   float: left;
   padding: 5px 8px 0 5px;
+  width: 35%;
+  height: auto;
 }
 
 .page_image {
