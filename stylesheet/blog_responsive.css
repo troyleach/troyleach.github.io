@@ -9,10 +9,13 @@
   }
 
   .page_header {
-    border: none;
     background-color: #ffffff;
     position: fixed;
     top: 0;
+  }
+
+  .date {
+    margin: 2px 0 10px 66%;
   }
 
   header h1 {
@@ -34,7 +37,6 @@
 
   nav ul {
   margin-bottom: 5px;
-  text-align: center;
   padding-left: 0;
 
   }
@@ -88,14 +90,18 @@
   }
 
   .page_content {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
-
-  
 
   .title {
     font-size: 2em;
     text-align: center;
+    line-height: 1.2em;
+  }
+
+  #cssmenu {
+    margin: auto;
+    margin-top: 5%;
   }
 
 
@@ -118,7 +124,7 @@
   }
 
   .responsive {
-    text-align: center;
+    /*text-align: center;*/
   }
 
   .notes {
@@ -134,7 +140,7 @@
   }
 
   .cat ul {
-    text-align: center;
+    /*text-align: center;*/
   }
 
   .socialize h4 {
@@ -190,6 +196,19 @@
   .twitter-timeline {
     margin-left: 20%;
   }
+
+  .date {
+    margin: 2px 0 10px 67%;
+  }
+
+  .page_image {
+    height: 160px;
+  }
+
+  code {
+    font-size: .5em;
+  }
+
 }
 
 /*text-shadow: 0px 0px 20px #219eb3;*/
