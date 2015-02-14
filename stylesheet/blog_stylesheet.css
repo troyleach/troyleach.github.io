@@ -13,7 +13,7 @@ body {
     font-size: 1em;
     margin: 0 auto;
     position: relative;
-    text-align: justify;
+    
 }
 
 #wrapper {
@@ -227,6 +227,7 @@ td, th {padding: 3px;}
 
 
 .page_content {
+  text-align: justify;
 	border: none;
   margin-left: 6px;
   background-color: #f7f9f8;
@@ -245,9 +246,11 @@ td, th {padding: 3px;}
 
 .title_image {
   float: left;
-  padding: 5px 8px 0 5px;
-  width: 35%;
+  margin: 8px 10px 0 5px;
+  /*padding: 5px 18px 0 5px;*/
+  width: 40%;
   height: auto;
+  box-shadow: 5px 5px 2px #888888;
 }
 
 .page_image {
@@ -294,7 +297,7 @@ h3 {
   font-size: 14px;
   padding-top: 0;
   /*float: right;*/
-  margin: 2px 0 10px 83%;
+  margin: 2px 0 10px 80%;
   font-family: times serit;
   font-style: oblique;
   font-weight: 100;
@@ -328,8 +331,9 @@ h3 {
 }
 
 .ref_line {
-  width: 20%;
+  width: 95%;
   margin-top: 35px;
+  margin: auto;
 }
 
 .references {
@@ -436,6 +440,7 @@ section h4 {
 
 .quote {
   color: #000000;
+  text-align: justify;
 }
 
 .cat {
@@ -443,7 +448,7 @@ section h4 {
 }
 
 .references {
-  background-color: red;
+  /*background-color: red;*/
   margin-bottom: 25px;
 }
 
