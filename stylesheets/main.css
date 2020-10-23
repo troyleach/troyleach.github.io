@@ -64,18 +64,19 @@ a:visited {
 }
 
 .main-image {
-  margin-top: 5em;
-  width: 250px;
-  border-radius: 50%;
-  opacity: 0.8;
-  filter: alpha(opacity=50);
+  margin-top: 2rem;
+  width: 200px;
+  /* border-radius: 50%; */
+  /* opacity: 0.6; */
+  /* filter: alpha(opacity=100); */
 }
+
 .my-information {
   /*color: #04AE04;*/
   /*color: #9D915A;*/
   /*color: #E0DF20; yellow*/
   color: #DEDEDC;
-  margin-top: 10px;
+  margin-top: 2rem;
   text-align: justify !important;
 }
 
