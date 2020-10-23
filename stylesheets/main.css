@@ -9,6 +9,17 @@ html, body {
   border: 0px solid red;
 }
 
+a {
+  color: #05B704;
+}
+
+a:hover {
+  color: #ACAD02;
+}
+
+a:visited {
+  color: #05B704;
+}
 .custom-center {
   text-align: center;
 }
@@ -19,21 +30,29 @@ html, body {
 
 .envelope-icon {
   width: 30px;
-  height 30px;
+  height: 30px;
 }
 
 .container {
-  min-height: 100%;
+  min-height: 100vh;
+}
+
+.content-container {
+  min-height: 100vh;
 }
 
 .social-media-icon {
-  width: 24px;
-  height 24px;
+  width: 32px;
+  height: auto;
 }
 
 .blog-icon {
-  width: 44px;
-  height 44px;
+  width: 55px;
+  height: auto;
+}
+
+.github-icon-container {
+  padding: 0 13px 0 20px;
 }
 
 .content {
@@ -56,7 +75,7 @@ html, body {
   /*color: #9D915A;*/
   /*color: #E0DF20; yellow*/
   color: #DEDEDC;
-  margin-top: 40px;
+  margin-top: 10px;
   text-align: justify !important;
 }
 
@@ -84,6 +103,22 @@ pre {
 
 .software-engineeer {
   font-size: 1.5em;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 5px 0 5px;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+
+.awesome-code {
+  color: #ACAD02;
 }
 
 .footer-text {
