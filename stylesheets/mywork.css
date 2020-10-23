@@ -1,0 +1,44 @@
+html, body {
+  background-color: #454545;
+}
+
+.header-container {
+  background-color: #000;
+  height: 60px;
+}
+
+.container {
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.my-name {
+  padding: 10px 0 0 10px;
+  color: white;
+}
+
+.grid-container {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-auto-rows: 100px; */
+  grid-gap: 20px;
+}
+
+.item {
+  border: 0px solid red;
+  background-color: #454545;
+}
+
+.ciq-img {
+  width: 100%;
+}
+
+#footer {
+  clear: both;
+  top: -100px;
+  left: 0;
+  right: 0;
+}
