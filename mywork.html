@@ -43,78 +43,85 @@
 
   <div class="container">
     <div class="content-container">
+
+      <div>
+        <DisplayImage></DisplayImage>
+      </div>
+
+      <!-- this should be image-grid-container // this is now being created above on line 48
       <div class="grid-container">
-        <div class='item'>
+        <div class='item' onClick="testThis('bluecrew')">
           <img class='ciq-img' src='images/bluecrew.png' alt='CIQ' />
         </div>
-        <div class='item'>
+        <div class='item' onClick="testThis('bluecrew')">
           <img class='ciq-img' src='images/canceriq1.png' alt='CIQ' />
         </div>
-        <div class='item'>
+        <div class='item' onClick="testThis('bluecrew')">
           <img class='ciq-img' src='images/divegalaxsea.png' alt='CIQ' />
         </div>
-        <div class='item'>
+        <div class='item' onClick="testThis('bluecrew')">
           <img class='ciq-img' src='images/divegalaxseaAdmin.png' alt='CIQ' />
         </div>
       </div>
-
     </div>
-    <!-- <br> -->
-    <div>
-      <div class="custom-center design">
-        <p class='software-engineeer'>
-          Software Engineer
-        </p>
-        <p class='awesome-code'> write awesome code with awesome people</p>
-        <ul>
-          <li>
-            <a href="/mywork.html">
-              Work
+    -->
+      <!-- <br> -->
+      <div>
+        <div class="custom-center design">
+          <p class='software-engineeer'>
+            Software Engineer
+          </p>
+          <p class='awesome-code'> write awesome code with awesome people</p>
+          <ul>
+            <li>
+              <a href="/mywork.html">
+                Work
+              </a>
+            <li class="github-icon-container">
+              <a href="https://github.com/troyleach" target="_blank">
+                <img src="images/github-32x32.png" alt="github logo" class='social-media-icon'>
+              </a>
+            </li>
+            <li>
+              <a href="https://troyleach.github.io/troys_blog_react" target="_blank">
+                Stories
+              </a>
+          </ul>
+          <div>
+            <a href="mailto:troyleach@outlook.com?subject=Would Like to chat&body=Hi Troy,">
+              <img src="images/mail.png" alt="Envelope Icon" class='envelope-icon invert'>
             </a>
-          <li class="github-icon-container">
-            <a href="https://github.com/troyleach" target="_blank">
-              <img src="images/github-32x32.png" alt="github logo" class='social-media-icon'>
-            </a>
-          </li>
-          <li>
-            <a href="https://troyleach.github.io/troys_blog_react" target="_blank">
-              Stories
-            </a>
-        </ul>
-        <div>
-          <a href="mailto:troyleach@outlook.com?subject=Would Like to chat&body=Hi Troy,">
-            <img src="images/mail.png" alt="Envelope Icon" class='envelope-icon invert'>
-          </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer id='footer' class='design footer-container'>
-    <p class='text-center footer-text'>troy leach 2015</p>
-  </footer>
+    <footer id='footer' class='design footer-container'>
+      <p class='text-center footer-text'>troy leach 2015</p>
+    </footer>
 
 
 
 
 
 
-  <!--<div class='col-12 articles'>-->
-  <!--not sure I put this in here-->
-  <!--<a href="articles/TroyLeachArticle.pdf" target="_blank" class="badge badge-success">Interesting Read</a>-->
-  <!--</div>-->
+    <!--<div class='col-12 articles'>-->
+    <!--not sure I put this in here-->
+    <!--<a href="articles/TroyLeachArticle.pdf" target="_blank" class="badge badge-success">Interesting Read</a>-->
+    <!--</div>-->
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
-    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-    crossorigin="anonymous"></script>
-  <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+      integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+      integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+      crossorigin="anonymous"></script>
+    <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+    <script src="script/displayImage.js"></script>
 </body>
 
 </html>

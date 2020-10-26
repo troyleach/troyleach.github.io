@@ -28,13 +28,16 @@ a:hover {
 }
 
 .item {
+  cursor: pointer;
   border: 0px solid red;
-  background-color: #454545;
+  background-color: #191919;
 }
 
-.ciq-img {
+.ciq-img, .bluecrew-img {
   width: 100%;
 }
+
+.bluecrew-img {}
 
 #footer {
   clear: both;
