@@ -4,11 +4,11 @@ const jobImagesCiq = ['ciq1.jpg', 'ciq2.jpg', 'ciq3.jpg', 'ciq4.jpg', 'ciq5.jpg'
 const COMPANY_INFORMATION = {
   'bluecrew': {
     'name': "Bluecrew",
-    'lang': "Backend: NodeJS, Express, Front end: React, Redux"
+    'lang': "Backend built with NodeJS, Express, Front End built with React, Redux"
   },
   'canceriq1': {
     'name': "Cancer IQ",
-    'lang': "Ruby on Rails, Microservice: NodeJS, Express"
+    'lang': "Built with Ruby on Rails, Microservice built with NodeJS, Express"
   }
 }
 
@@ -54,7 +54,11 @@ function buildModal(company) {
     jobImages = jobImagesCiq;
   }
   const title = document.getElementById('exampleModalLabel');
+  title.setAttribute('class', 'modal-title')
   title.innerText = COMPANY_INFORMATION[companyName].name;
+
+  const description = document.getElementById('modalDescription')
+  description.innerText = COMPANY_INFORMATION[companyName].lang;
   // get the images for the company hardcoded for now 
   for (let i = 0; i < jobImages.length; i++) {
     const img = document.createElement('img');

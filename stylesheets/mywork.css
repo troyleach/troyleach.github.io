@@ -30,7 +30,7 @@ a:hover {
 .item {
   cursor: pointer;
   border: 0px solid red;
-  background-color: #191919;
+  padding: 15px;
 }
 
 .ciq-img, .bluecrew-img {
@@ -44,4 +44,43 @@ a:hover {
   top: -100px;
   left: 0;
   right: 0;
+}
+
+/* Model css */
+.modal-header {
+  background-color: #000;
+  border: 1px solid #05B704;
+}
+.modal-content {
+  background-color: #191919;
+  color: #ACAD02;
+}
+.modal-body {
+  background-color: #191919;
+  border-left: 1px solid #05B704;
+  border-right: 1px solid #05B704;
+}
+.modal-header {
+  border-bottom: 1px solid #191919 !important;
+}
+
+.modal-description {
+  border-bottom: 1px solid #191919 !important;
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  background-color: #000;
+  border: 1px solid #05B704;
+}
+
+.footer-text {
+ color: #ACAD02 !important;
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
 }
