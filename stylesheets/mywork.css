@@ -1,3 +1,10 @@
+:root {
+  --blue: #34495e;
+  --green: #e74c3c;
+  --yellow: #C9C243;
+  --orange: #FFA644;
+  --red: #3498db;
+}
 html, body {
   background-color: #191919;
 }
@@ -20,8 +27,9 @@ a:hover {
 }
 
 .grid-container {
-  margin-top: 35px;
   display: grid;
+  /* grid-template-columns: 200px 1fr; */
+  margin-top: 35px;
   grid-template-columns: repeat(2, 1fr);
   /* grid-auto-rows: 100px; */
   grid-gap: 20px;
@@ -78,7 +86,39 @@ a:hover {
  color: #ACAD02 !important;
 }
 
+@media (min-width: 450px) {
+   body {
+     /* background-color: var(--red); */
+   }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}
+
 @media (min-width: 768px) {
+   body {
+     /* background-color: green; */
+   }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}
+
+ @media (min-width: 960px) {
+   body {
+     /* background-color: red; */
+   }
   .modal-xl {
     width: 90%;
    max-width:1200px;
