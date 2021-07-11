@@ -1,0 +1,35 @@
+/* CSS for gallery */
+.gallery-image-container {
+  display: flex; /* not sure about this on all browsers */
+  width: 75%;
+  height: 75%;
+  background: #329cd2;
+  margin: 1em auto;
+}
+
+.gallery-image {
+  margin: 1em auto;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+.thumbs {
+  left: 0;
+  bottom 0 !important;
+  height: 7vh;
+}
+
+.box {
+  padding: 2px !important;
+}
+
+.slidea {
+  text-align: center;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.gallery-title {
+  text-align: center;
+  color: #fff;
+}
